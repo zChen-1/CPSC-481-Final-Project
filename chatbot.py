@@ -28,6 +28,7 @@ model = make_pipeline(TfidfVectorizer(), MultinomialNB())
 # Train the model with the training data
 model.fit(train_inputs, train_labels)
 
+
 # Function to handle math problems
 def handle_math(problem_statement):
     try:
@@ -41,8 +42,8 @@ def handle_math(problem_statement):
             return f"The answer would be {result}."
     except Exception as e:
         return "There was a problem calculating that."
-
     return "I'm not sure how to answer that."
+
 
 # Chat
 def chat():
@@ -62,6 +63,7 @@ def chat():
             print(random.choice(response_dict[predicted_intent]))
         else:
             print("I'm not sure how to respond to that.")
+
 
 if __name__ == "__main__":
     chat()
