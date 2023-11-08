@@ -1,6 +1,6 @@
 # CPSC-481-Final-Project
 
-## 
+## How to use
 python.exe -m pip install --upgrade pip
 
 pip install nltk
