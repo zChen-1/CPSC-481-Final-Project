@@ -1,10 +1,10 @@
 # CPSC-481-Final-Project
 
 ## Group Information
-Name： Zhihuang Chen
-Name： Justin Jhern
-Name:  Taylor Kim
-Name:  David Navarro
+*Name： Zhihuang Chen
+*Name： Justin Jhern
+*Name:  Taylor Kim
+*Name:  David Navarro
 
 
 
