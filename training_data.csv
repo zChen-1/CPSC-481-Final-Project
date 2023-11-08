@@ -1,0 +1,8 @@
+utterance,intent
+"Hello","greeting"
+"Hi","greeting"
+"I have two apples and eat one","math"
+"How many apples do I have if I eat one out of two","math"
+"Calculate 1 plus 1","math"
+"Calculate 1 add 1","math"
+"Calculate 1 sub 1","math"
