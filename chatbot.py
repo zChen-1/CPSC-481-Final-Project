@@ -1,3 +1,4 @@
+from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
@@ -5,6 +6,8 @@ from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
 import random
 import re
+
+app = Flask(__name__)
 
 # Load the training data
 data = pd.read_csv('training_data.csv')
@@ -45,25 +48,36 @@ def handle_math(problem_statement):
     return "I'm not sure how to answer that."
 
 
-# Chat
-def chat():
-    print("Hello! How can I help you? Type 'quit' to exit.")
-    while True:
-        user_input = input("You : ").lower()
-        if user_input == 'quit':
-            print("Goodbye! See you next time!")
-            break
+# Chat, return response
+def chat(user_input):
+    # Predict the intent
+    predicted_intent = model.predict([user_input])[0]
 
-        # Predict the intent
-        predicted_intent = model.predict([user_input])[0]
+    if predicted_intent == 'math':
+        print(handle_math(user_input))
+        return (handle_math(user_input))
+    elif predicted_intent in response_dict:
+        print(random.choice(response_dict[predicted_intent]))
+        return (random.choice(response_dict[predicted_intent]))
+    else:
+        print("I'm not sure how to respond to that.")
+        return ("I'm not sure how to respond to that.")
 
-        if predicted_intent == 'math':
-            print(handle_math(user_input))
-        elif predicted_intent in response_dict:
-            print(random.choice(response_dict[predicted_intent]))
-        else:
-            print("I'm not sure how to respond to that.")
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+@app.route("/get_response", methods=["POST"])
+def chat_response():
+    # get user input
+    user_msg = request.get_data().decode()
+    print(user_msg)
+    # use chat() to get chatbot's response
+    chatbot_response = chat(user_msg)
+    return jsonify({'response': chatbot_response})
 
 
 if __name__ == "__main__":
-    chat()
+    app.run(debug=True, port=5501)

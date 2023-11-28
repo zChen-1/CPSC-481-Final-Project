@@ -1,0 +1,88 @@
+/* Main Chatbox*/
+.main-chatbox {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+/* Chatbox Top*/
+.chatbox-top {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color:orange;
+}
+
+/* Chatbox Body */
+.chatbox-body {
+    height: 70vh;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid orange;
+    overflow-y: scroll;
+}
+
+.msg-bubbles {
+    border: 2px solid orange;
+    border-radius: 20px;
+    width: fit-content;
+    max-width: 45%;
+    padding: 0 10px 0 10px;
+}
+
+.chatbot-msg {
+    margin-right: auto;
+}
+
+.user-msg {
+    background-color: orange;
+    margin-left: auto;
+}
+
+/* Chatbox Bottom */
+.chatbox-bottom {
+    display: flex;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: orange;
+    justify-content: flex-end;
+
+}
+
+.input-box {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+    height: calc(2.25rem + 2px);
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+.send-button {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    height: calc(2.25rem + 2px);
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#footer {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}

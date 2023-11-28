@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index.css') }}">
+    <title>TuffyChatbot AI Tutor</title>
+</head>
+<body>
+    <!-- Main Chatbox Container-->
+    <div class="main-chatbox">
+        <!-- Chatbox Top -->
+        <div class="chatbox-top">
+            <p>TuffyChatbot AI Tutor</p>
+        </div>
+        <!-- Chatbox Body -->
+        <div class="chatbox-body" id="chat-msg">
+            <div class="msg-bubbles chatbot-msg">
+                <p>Hello! How can I help you?</p>
+            </div>
+        </div>
+        <!-- Chatbox Bottom-->
+        <div class="chatbox-bottom">
+            <input class="input-box" id="user-input" type="text" placeholder="Send a message"/>
+            <button class="send-button" id="send-button" onclick="sendMsg()">Send</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <footer>
+            <p>*Disclaimer: TuffyChatbot is designed for demonstration purposes. The responses generated may not gurantee accurate information.<br/>
+                CSUF Fall 2023 CPSC481 Project 
+            </p>
+        </footer>
+    </footer>
+    
+    <script>
+        // Send message when pressed enter key
+        let msgEnterKey = document.getElementById('user-input');
+        msgEnterKey.addEventListener("keypress", function (event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                sendMsg();
+            }            
+        });
+
+        // send and receive messages
+        function sendMsg() {
+            var scrollPin = document.getElementById("chat-msg"); // to pin scroll at the bottom of chat message
+            let userMsg = document.getElementById('user-input').value;
+            // add user input to chatbox body
+            document.getElementById('chat-msg').innerHTML += `<div class="msg-bubbles user-msg"><p>${userMsg}</p></div>`;
+            scrollPin.scrollTop = scrollPin.scrollHeight; // pin scroll
+            clearText();
+            
+            fetch('/get_response', {
+                method: 'POST',                
+                headers: {
+                    'Content-Type': 'text/plain'},
+                body: userMsg
+            })
+            .then(response => response.json())
+            .then(data => {
+                // add chatbot responsse to chatbot body
+                document.getElementById('chat-msg').innerHTML += `<div class="msg-bubbles chatbot-msg"><p>${data.response}</p></div>`;
+                scrollPin.scrollTop = scrollPin.scrollHeight; // pin scroll
+            });
+        }
+
+        // clear message input box
+        function clearText() {
+            let text = document.getElementById('user-input');
+            text.value = "";
+        }
+    </script>
+</body>
+</html>
