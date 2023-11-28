@@ -15,7 +15,7 @@
 ## How to use
 python.exe -m pip install --upgrade pip
 
-pip install scikit-learn pandas
+pip install scikit-learn pandas flask
 
 python chatbot.py
 
