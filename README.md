@@ -17,5 +17,10 @@ python.exe -m pip install --upgrade pip
 
 pip install scikit-learn pandas flask
 
-python chatbot.py
+## To run
+1. change directory to where downloaded file is located
+2. run python chatbot.py or python3 chabot.py on terminal or IDE
+3. Wait until Flask app is connected
+4. Open web browser with http://127.0.0.1:5501
+
 
