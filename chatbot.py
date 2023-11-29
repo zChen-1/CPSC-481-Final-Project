@@ -33,6 +33,8 @@ model.fit(train_inputs, train_labels)
 
 
 # Function to handle math problems
+# Limitation can only perform one type of operation
+# e.g., 10 + 5 - 5 will return 20 (incorrect answer)
 def handle_math(problem_statement):
     try:
         # Extract numbers from the problem statement
@@ -42,6 +44,16 @@ def handle_math(problem_statement):
             return f"The answer would be {result}."
         elif any(word in problem_statement for word in ['sub', 'minus', 'subtract', '-']):
             result = numbers[0] - sum(numbers[1:])
+            return f"The answer would be {result}."
+        elif any(word in problem_statement for word in ['divide','div', '/']):
+            result = numbers[0]
+            for i in range(1, len(numbers)):
+                result = result / numbers[i]
+            return f"The answer would be {result}"
+        elif any(word in problem_statement for word in ['multiply', 'times', '*']):
+            result = numbers[0]
+            for i in range(1, len(numbers)):
+                result = result * numbers[i]
             return f"The answer would be {result}."
     except Exception as e:
         return "There was a problem calculating that."
