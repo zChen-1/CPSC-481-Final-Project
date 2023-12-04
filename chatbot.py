@@ -4,6 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 import random
 import re
 import ast
@@ -72,7 +73,13 @@ def safe_eval(node):
 # e.g., 10 + 5 - 5 will return 20 (incorrect answer)
 def handle_math(problem_statement):
     try:
-        # Parse and evaluate the math expression safely
+        # Replace natural language terms with arithmetic symbols
+        problem_statement = problem_statement.replace("add", "+").replace("plus", "+")
+        problem_statement = problem_statement.replace("subtract", "-").replace("minus", "-")
+        problem_statement = problem_statement.replace("multiply", "*").replace("times", "*")
+        problem_statement = problem_statement.replace("divide", "/").replace("by", "/")
+
+        # Safely evaluate the math expression
         node = ast.parse(problem_statement, mode='eval').body
         result = safe_eval(node)
         return f"The answer would be {result}."
@@ -92,7 +99,8 @@ def find_definition(query):
 # Chat, return response
 def chat(user_input):
     # Check for math expression first
-    if re.search(r'\b\d+[\+\-\*\/]\d+\b', user_input):
+    if re.search(r'\b\d+\s*(\+|\-|\*|\/|add|plus|subtract|minus|multiply|times|divide|by)\s*\d+\b', user_input,
+                 re.IGNORECASE):
         return handle_math(user_input)
 
     # Predict the intent
@@ -103,6 +111,10 @@ def chat(user_input):
     print("Predicted Intent:", predicted_intent)
     if predicted_keyword:
         print("Key Word:", predicted_keyword)
+    # Calculate the accuracy
+    test_predictions = model.predict(test_inputs)
+    accuracy = accuracy_score(test_labels, test_predictions)
+    print(f"Model Accuracy: {accuracy:.2%}")
 
     # Handling different intents
     if predicted_intent == 'greeting':
