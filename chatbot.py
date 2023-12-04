@@ -69,7 +69,6 @@ def safe_eval(node):
 
 # Function to handle math problems
 # Limitation can only perform one type of operation
-# e.g., 10 + 5 - 5 will return 20 (incorrect answer)
 def handle_math(problem_statement):
     try:
         # Replace natural language terms with arithmetic symbols
@@ -104,11 +103,11 @@ def handle_calculus(query):
     pass
 
 
-# Function to handle algebraic equations
 def is_algebraic_query(query):
     return re.search(r'\w+\s*[=]\s*.+', query)
 
 
+# Function to algebraic equations, only for character 'x'
 def handle_algebra(query):
     try:
         # Replace common terms and isolate the equation
@@ -129,7 +128,7 @@ def handle_algebra(query):
 # Chat, return response
 def chat(user_input):
     # Check for math expression first
-    if re.search(r'\b[a-z]+\b', user_input):  # Checks characters (like 'x'), but only work with 'x' now
+    if re.search(r'x\b', user_input):  # Checks characters (like 'x'), but only work with 'x' now
         return handle_algebra(user_input)
     if re.search(r'\b\d+\s*(\+|\-|\*|\/|add|plus|subtract|minus|multiply|times|divide|by)\s*\d+\b', user_input,
                  re.IGNORECASE):
@@ -141,11 +140,11 @@ def chat(user_input):
     predicted_intent = model.predict([user_input])[0]
     predicted_keyword = model_kw.predict([user_input])[0] if predicted_intent == 'definition' else None
 
-    # Do not show to user, only for debugging
+    # Do not show to users, only for debugging
     print("Predicted Intent:", predicted_intent)
     if predicted_keyword:
         print("Key Word:", predicted_keyword)
-    # Calculate the accuracy
+    # Calculate the accuracy for debugging
     test_predictions = model.predict(test_inputs)
     accuracy = accuracy_score(test_labels, test_predictions)
     print(f"Model Accuracy: {accuracy:.2%}")
