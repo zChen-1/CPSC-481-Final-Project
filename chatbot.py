@@ -10,7 +10,6 @@ import re
 import ast
 import operator
 
-
 app = Flask(__name__)
 
 # Load the training data
@@ -24,21 +23,20 @@ response_data = pd.read_csv('training_data/responses.csv')
 definitions = pd.read_csv('training_data/definition.csv')
 definition_dict = dict(zip(definitions['Key Word'], definitions['Definition']))
 
-# Create a dictionary to hold responses for each intent
+# Create a dictionary
 inputs = data['utterance']
 labels = data['intent']
-questions = data_keyWord['questions']
-keyWords = data_keyWord['key word']
-
+questions = data_keyWord['questions']  # Input from sentence
+keyWords = data_keyWord['key word']  # Key Word from sentence
 
 response_dict = {}
 for intent in response_data['intent'].unique():
     response_dict[intent] = response_data[response_data['intent'] == intent]['response'].tolist()
 
-
 # Split data into training and test sets
 train_inputs, test_inputs, train_labels, test_labels = train_test_split(inputs, labels, test_size=0.2, random_state=42)
-train_inputs_kw, test_inputs_kw, train_labels_kw, test_labels_kw = train_test_split(questions, keyWords, test_size=0.2, random_state=42)
+train_inputs_kw, test_inputs_kw, train_labels_kw, test_labels_kw = train_test_split(questions, keyWords, test_size=0.2,
+                                                                                    random_state=42)
 
 model = make_pipeline(TfidfVectorizer(), MultinomialNB())
 model_kw = make_pipeline(TfidfVectorizer(), MultinomialNB())
@@ -79,15 +77,15 @@ def handle_math(problem_statement):
         problem_statement = problem_statement.replace("multiply", "*").replace("times", "*")
         problem_statement = problem_statement.replace("divide", "/").replace("by", "/")
 
-        # Safely evaluate the math expression
         node = ast.parse(problem_statement, mode='eval').body
         result = safe_eval(node)
+
         return f"The answer would be {result}."
     except Exception as e:
         return "There was a problem calculating that."
 
 
-# Function to find the definition
+# Find the definition
 def find_definition(query):
     words = query.lower().split()
     for word in words:
@@ -115,6 +113,9 @@ def chat(user_input):
     test_predictions = model.predict(test_inputs)
     accuracy = accuracy_score(test_labels, test_predictions)
     print(f"Model Accuracy: {accuracy:.2%}")
+    test_predictions_kw = model_kw.predict(test_inputs_kw)
+    accuracy_kw = accuracy_score(test_labels_kw, test_predictions_kw)
+    print(f"Model of find the key word Accuracy: {accuracy_kw:.2%}")
 
     # Handling different intents
     if predicted_intent == 'greeting':
