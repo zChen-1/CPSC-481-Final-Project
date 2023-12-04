@@ -9,6 +9,7 @@ import random
 import re
 import ast
 import operator
+from sympy import symbols, Eq, solve, sympify
 
 app = Flask(__name__)
 
@@ -94,18 +95,53 @@ def find_definition(query):
     return None
 
 
+def is_calculus_query(query):
+    calculus_keywords = ['derivative', 'integral', 'integrate', 'differentiate', 'sin', 'cos', 'tan']
+    return any(keyword in query.lower() for keyword in calculus_keywords)
+
+
+def handle_calculus(query):
+    pass
+
+
+# Function to handle algebraic equations
+def is_algebraic_query(query):
+    return re.search(r'\w+\s*[=]\s*.+', query)
+
+
+def handle_algebra(query):
+    try:
+        # Replace common terms and isolate the equation
+        query = query.replace("calculate", "").replace("what is", "").replace("=", "-(") + ")"
+        # Define a symbol for x
+        x = symbols('x')
+        equation = sympify(query, locals={'x': x})
+        result = solve(equation, x)  # output would be [number]
+        if result:  # remove the "[" and "]" in output
+            result_str = ', '.join(map(str, result))
+            return f"X = {result_str}"
+        else:
+            return "I couldn't solve the equation."
+    except Exception as e:
+        return f"There was an error solving the equation: {e}"
+
+
 # Chat, return response
 def chat(user_input):
     # Check for math expression first
+    if re.search(r'\b[a-z]+\b', user_input):  # Checks characters (like 'x'), but only work with 'x' now
+        return handle_algebra(user_input)
     if re.search(r'\b\d+\s*(\+|\-|\*|\/|add|plus|subtract|minus|multiply|times|divide|by)\s*\d+\b', user_input,
                  re.IGNORECASE):
         return handle_math(user_input)
+    if is_calculus_query(user_input):
+        return handle_calculus(user_input)
 
     # Predict the intent
     predicted_intent = model.predict([user_input])[0]
     predicted_keyword = model_kw.predict([user_input])[0] if predicted_intent == 'definition' else None
 
-    # Not show to user, only for debugging
+    # Do not show to user, only for debugging
     print("Predicted Intent:", predicted_intent)
     if predicted_keyword:
         print("Key Word:", predicted_keyword)

@@ -43,6 +43,7 @@ Can you assist with calculations?,botSkills
 Are you able to give definitions?,botSkills
 Do you understand natural language?,botSkills
 Can you interact with users?,botSkills
+Calculate the integral of sin(x),math
 1+1,math
 1-1,math
 1*1,math
