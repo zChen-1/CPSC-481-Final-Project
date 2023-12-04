@@ -1,0 +1,323 @@
+key word,questions
+AI,What is AI?
+Artificial Intelligence,What is Artificial Intelligence?
+Intelligence,What is Intelligence?
+Turing Test,What is Turing Test?
+Strong AI,What is Strong AI?
+Weak AI,What is Weak AI?
+Agents,What is Agents?
+Rationality,What is Rationality?
+Omniscience Agent,What is Omniscience Agent?
+Rational Agent,What is Rational Agent?
+PEAS,What is PEAS?
+Fully Observable,What is Fully Observable?
+Partially observable,What is Partially observable?
+Single Agent,What is Single Agent?
+Multiagent,What is Multiagent?
+Deterministic,What is Deterministic?
+Stochastic,What is Stochastic?
+Episodic,What is Episodic?
+Sequential,What is Sequential?
+Static,What is Static?
+Dynamic,What is Dynamic?
+Discrete,What is Discrete?
+Continous,What is Continous?
+Known,What is Known?
+Unknown,What is Unknown?
+State,What is State?
+State Space,What is State Space?
+Search,What is Search?
+State space search,What is State space search?
+Graph,What is Graph?
+Path,What is Path?
+Cycle,What is Cycle?
+State space,What is State space?
+Problem space,What is Problem space?
+"Priority queue,From queue","What is Priority queue,From queue?"
+FIFO queue,What is FIFO queue?
+LIFO queue,What is LIFO queue?
+Completeness,What is Completeness?
+Optimality,What is Optimality?
+Time complexity,What is Time complexity?
+Space complexity,What is Space complexity?
+Branching Factor,What is Branching Factor?
+Uniformed search,What is Uniformed search?
+Breadth-first search,What is Breadth-first search?
+Depth-first search,What is Depth-first search?
+Depth-limited search,What is Depth-limited search?
+Iterative-deepening search,What is Iterative-deepening search?
+Uniform-cost search,What is Uniform-cost search?
+Heuristics,What is Heuristics?
+Greedy Best-First Search,What is Greedy Best-First Search?
+A* Search,What is A* Search?
+A* Search,A*
+Search,Sear
+Admissible,What is Admissible?
+Syntax,What is Syntax?
+Semantics,What is Semantics?
+Knownledgebase,What is Knownledgebase?
+Ethics,What is Ethics?
+Statistical parity,What is Statistical parity?
+Equality of false negatives,What is Equality of false negatives?
+De-identification,What is De-identification?
+Data Swapping,What is Data Swapping?
+Randomization,What is Randomization?
+Generalization,What is Generalization?
+Suppression,What is Suppression?
+Conditional Probability,What is Conditional Probability?
+Machine Learning,What is Machine Learning?
+Supervised Learning,What is Supervised Learning?
+Unsupervised Learning,What is Unsupervised Learning?
+Semi-supervised Learning,What is Semi-supervised Learning?
+Reinforcement Learning,What is Reinforcement Learning?
+Batch Learning,What is Batch Learning?
+Instance-based Learning,What is Instance-based Learning?
+Model-based Learning,What is Model-based Learning?
+Decision Tree,What is Decision Tree?
+Clustering,What is Clustering?
+Recommendation systems,What is Recommendation systems?
+Artificial Neuron,What is Artificial Neuron?
+Articifial Neural Network,What is Articifial Neural Network?
+Convolutional Neural Network,What is Convolutional Neural Network?
+Spatial Information,What is Spatial Information?
+Convolution,What is Convolution?
+AI,AI
+Artificial Intelligence,Artificial Intelligence
+Intelligence,Intelligence
+Turing Test,Turing Test
+Strong AI,Strong AI
+Weak AI,Weak AI
+Agents,Agents
+Rationality,Rationality
+Omniscience Agent,Omniscience Agent
+Rational Agent,Rational Agent
+PEAS,PEAS
+Fully Observable,Fully Observable
+Partially observable,Partially observable
+Single Agent,Single Agent
+Multiagent,Multiagent
+Deterministic,Deterministic
+Stochastic,Stochastic
+Episodic,Episodic
+Sequential,Sequential
+Static,Static
+Dynamic,Dynamic
+Discrete,Discrete
+Continous,Continous
+Known,Known
+Unknown,Unknown
+State,State
+State Space,State Space
+Search,Search
+State space search,State space search
+Graph,Graph
+Path,Path
+Cycle,Cycle
+State space,State space
+Problem space,Problem space
+"Priority queue,From queue","Priority queue,From queue"
+FIFO queue,FIFO queue
+LIFO queue,LIFO queue
+Completeness,Completeness
+Optimality,Optimality
+Time complexity,Time complexity
+Space complexity,Space complexity
+Branching Factor,Branching Factor
+Uniformed search,Uniformed search
+Breadth-first search,Breadth-first search
+Depth-first search,Depth-first search
+Depth-limited search,Depth-limited search
+Iterative-deepening search,Iterative-deepening search
+Uniform-cost search,Uniform-cost search
+Heuristics,Heuristics
+Greedy Best-First Search,Greedy Best-First Search
+A* Search,A* Search
+Admissible,Admissible
+Syntax,Syntax
+Semantics,Semantics
+Knownledgebase,Knownledgebase
+Ethics,Ethics
+Statistical parity,Statistical parity
+Equality of false negatives,Equality of false negatives
+De-identification,De-identification
+Data Swapping,Data Swapping
+Randomization,Randomization
+Generalization,Generalization
+Suppression,Suppression
+Conditional Probability,Conditional Probability
+Machine Learning,Machine Learning
+Supervised Learning,Supervised Learning
+Unsupervised Learning,Unsupervised Learning
+Semi-supervised Learning,Semi-supervised Learning
+Reinforcement Learning,Reinforcement Learning
+Batch Learning,Batch Learning
+Instance-based Learning,Instance-based Learning
+Model-based Learning,Model-based Learning
+Decision Tree,Decision Tree
+Clustering,Clustering
+Recommendation systems,Recommendation systems
+Artificial Neuron,Artificial Neuron
+Articifial Neural Network,Articifial Neural Network
+Convolutional Neural Network,Convolutional Neural Network
+Spatial Information,Spatial Information
+Convolution,Convolution
+AI,Explain the AI?
+Artificial Intelligence,Explain the Artificial Intelligence?
+Intelligence,Explain the Intelligence?
+Turing Test,Explain the Turing Test?
+Strong AI,Explain the Strong AI?
+Weak AI,Explain the Weak AI?
+Agents,Explain the Agents?
+Rationality,Explain the Rationality?
+Omniscience Agent,Explain the Omniscience Agent?
+Rational Agent,Explain the Rational Agent?
+PEAS,Explain the PEAS?
+Fully Observable,Explain the Fully Observable?
+Partially observable,Explain the Partially observable?
+Single Agent,Explain the Single Agent?
+Multiagent,Explain the Multiagent?
+Deterministic,Explain the Deterministic?
+Stochastic,Explain the Stochastic?
+Episodic,Explain the Episodic?
+Sequential,Explain the Sequential?
+Static,Explain the Static?
+Dynamic,Explain the Dynamic?
+Discrete,Explain the Discrete?
+Continous,Explain the Continous?
+Known,Explain the Known?
+Unknown,Explain the Unknown?
+State,Explain the State?
+State Space,Explain the State Space?
+Search,Explain the Search?
+State space search,Explain the State space search?
+Graph,Explain the Graph?
+Path,Explain the Path?
+Cycle,Explain the Cycle?
+State space,Explain the State space?
+Problem space,Explain the Problem space?
+"Priority queue,From queue","Explain the Priority queue,From queue?"
+FIFO queue,Explain the FIFO queue?
+LIFO queue,Explain the LIFO queue?
+Completeness,Explain the Completeness?
+Optimality,Explain the Optimality?
+Time complexity,Explain the Time complexity?
+Space complexity,Explain the Space complexity?
+Branching Factor,Explain the Branching Factor?
+Uniformed search,Explain the Uniformed search?
+Breadth-first search,Explain the Breadth-first search?
+Depth-first search,Explain the Depth-first search?
+Depth-limited search,Explain the Depth-limited search?
+Iterative-deepening search,Explain the Iterative-deepening search?
+Uniform-cost search,Explain the Uniform-cost search?
+Heuristics,Explain the Heuristics?
+Greedy Best-First Search,Explain the Greedy Best-First Search?
+A* Search,Explain the A* Search?
+Admissible,Explain the Admissible?
+Syntax,Explain the Syntax?
+Semantics,Explain the Semantics?
+Knownledgebase,Explain the Knownledgebase?
+Ethics,Explain the Ethics?
+Statistical parity,Explain the Statistical parity?
+Equality of false negatives,Explain the Equality of false negatives?
+De-identification,Explain the De-identification?
+Data Swapping,Explain the Data Swapping?
+Randomization,Explain the Randomization?
+Generalization,Explain the Generalization?
+Suppression,Explain the Suppression?
+Conditional Probability,Explain the Conditional Probability?
+Machine Learning,Explain the Machine Learning?
+Supervised Learning,Explain the Supervised Learning?
+Unsupervised Learning,Explain the Unsupervised Learning?
+Semi-supervised Learning,Explain the Semi-supervised Learning?
+Reinforcement Learning,Explain the Reinforcement Learning?
+Batch Learning,Explain the Batch Learning?
+Instance-based Learning,Explain the Instance-based Learning?
+Model-based Learning,Explain the Model-based Learning?
+Decision Tree,Explain the Decision Tree?
+Clustering,Explain the Clustering?
+Recommendation systems,Explain the Recommendation systems?
+Artificial Neuron,Explain the Artificial Neuron?
+Articifial Neural Network,Explain the Articifial Neural Network?
+Convolutional Neural Network,Explain the Convolutional Neural Network?
+Spatial Information,Explain the Spatial Information?
+Convolution,Explain the Convolution?
+AI,Define the AI?
+Artificial Intelligence,Define the Artificial Intelligence?
+Intelligence,Define the Intelligence?
+Turing Test,Define the Turing Test?
+Strong AI,Define the Strong AI?
+Weak AI,Define the Weak AI?
+Agents,Define the Agents?
+Rationality,Define the Rationality?
+Omniscience Agent,Define the Omniscience Agent?
+Rational Agent,Define the Rational Agent?
+PEAS,Define the PEAS?
+Fully Observable,Define the Fully Observable?
+Partially observable,Define the Partially observable?
+Single Agent,Define the Single Agent?
+Multiagent,Define the Multiagent?
+Deterministic,Define the Deterministic?
+Stochastic,Define the Stochastic?
+Episodic,Define the Episodic?
+Sequential,Define the Sequential?
+Static,Define the Static?
+Dynamic,Define the Dynamic?
+Discrete,Define the Discrete?
+Continous,Define the Continous?
+Known,Define the Known?
+Unknown,Define the Unknown?
+State,Define the State?
+State Space,Define the State Space?
+Search,Define the Search?
+State space search,Define the State space search?
+Graph,Define the Graph?
+Path,Define the Path?
+Cycle,Define the Cycle?
+State space,Define the State space?
+Problem space,Define the Problem space?
+"Priority queue,From queue","Define the Priority queue,From queue?"
+FIFO queue,Define the FIFO queue?
+LIFO queue,Define the LIFO queue?
+Completeness,Define the Completeness?
+Optimality,Define the Optimality?
+Time complexity,Define the Time complexity?
+Space complexity,Define the Space complexity?
+Branching Factor,Define the Branching Factor?
+Uniformed search,Define the Uniformed search?
+Breadth-first search,Define the Breadth-first search?
+Depth-first search,Define the Depth-first search?
+Depth-limited search,Define the Depth-limited search?
+Iterative-deepening search,Define the Iterative-deepening search?
+Uniform-cost search,Define the Uniform-cost search?
+Heuristics,Define the Heuristics?
+Greedy Best-First Search,Define the Greedy Best-First Search?
+A* Search,Define the A* Search?
+Admissible,Define the Admissible?
+Syntax,Define the Syntax?
+Semantics,Define the Semantics?
+Knownledgebase,Define the Knownledgebase?
+Ethics,Define the Ethics?
+Statistical parity,Define the Statistical parity?
+Equality of false negatives,Define the Equality of false negatives?
+De-identification,Define the De-identification?
+Data Swapping,Define the Data Swapping?
+Randomization,Define the Randomization?
+Generalization,Define the Generalization?
+Suppression,Define the Suppression?
+Conditional Probability,Define the Conditional Probability?
+Machine Learning,Define the Machine Learning?
+Supervised Learning,Define the Supervised Learning?
+Unsupervised Learning,Define the Unsupervised Learning?
+Semi-supervised Learning,Define the Semi-supervised Learning?
+Reinforcement Learning,Define the Reinforcement Learning?
+Batch Learning,Define the Batch Learning?
+Instance-based Learning,Define the Instance-based Learning?
+Model-based Learning,Define the Model-based Learning?
+Decision Tree,Define the Decision Tree?
+Clustering,Define the Clustering?
+Recommendation systems,Define the Recommendation systems?
+Artificial Neuron,Define the Artificial Neuron?
+Articifial Neural Network,Define the Articifial Neural Network?
+Convolutional Neural Network,Define the Convolutional Neural Network?
+Spatial Information,Define the Spatial Information?
+Convolution,Define the Convolution?

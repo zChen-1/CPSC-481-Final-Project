@@ -1,0 +1,10 @@
+intent,response
+greeting,"Hello! How can I help you today?"
+greeting,"Hi there! What can I do for you?"
+greeting,"Hey! Glad to chat with you."
+botInfo,"My name is Chatbot, and I'm here to assist you."
+botInfo,"I am a virtual assistant designed to answer your questions."
+botSkills,"I can help with general questions, perform calculations, and explain terms."
+botSkills,"My skills include answering queries, doing math, and providing information."
+botSkills,"I'm equipped to assist with basic inquiries and calculations."
+

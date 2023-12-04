@@ -1,0 +1,131 @@
+utterance,intent
+Hello,greeting
+Hi,greeting
+Hey there,greeting
+Good morning,greeting
+Good afternoon,greeting
+Good evening,greeting
+How's it going?,greeting
+What's up?,greeting
+How are you doing?,greeting
+What's your name?,botInfo
+Who are you?,botInfo
+Tell me about yourself,botInfo
+Can you help me?,botInfo
+What can you do?,botInfo
+Describe your abilities,botInfo
+What are your skills?,botInfo
+Add 2 and 3,math
+What is 5 plus 7?,math
+Subtract 10 from 20,math
+Multiply 4 and 5,math
+Divide 30 by 3,math
+Calculate 100 minus 45,math
+How much is 7 times 8?,math
+What's 15 divided by 5?,math
+What is AI?,definition
+What is AI,definition
+AI,definition
+ai,definition
+Ai,definition
+aI,definition
+Time complexity,definition
+Define machine learning,definition
+What does 'algorithm' mean?,definition
+Explain neural networks,definition
+Define quantum computing,definition
+What is blockchain?,definition
+Explain the Turing Test,definition
+What is a chatbot?,definition
+How do you work?,botSkills
+What problems can you solve?,botSkills
+Can you assist with calculations?,botSkills
+Are you able to give definitions?,botSkills
+Do you understand natural language?,botSkills
+Can you interact with users?,botSkills
+1+1,math
+1-1,math
+1*1,math
+1/1,math
+1+1+1+1,math
+A* Search,definition
+AI,definition
+Admissible,definition
+Agents,definition
+Artificial Intelligence,definition
+Artificial Neural Network,definition
+Artificial Neuron,definition
+Batch Learning,definition
+Branching Factor,definition
+Breadth-first search,definition
+Clustering,definition
+Completeness,definition
+Conditional Probability,definition
+Continous,definition
+Convolution,definition
+Convolutional Neural Network,definition
+Cycle,definition
+Data Swapping,definition
+De-identification,definition
+Decision Tree,definition
+Depth-first search,definition
+Depth-limited search,definition
+Deterministic,definition
+Discrete,definition
+Dynamic,definition
+Episodic,definition
+Equality of false negatives,definition
+Ethics,definition
+FIFO queue,definition
+Fully Observable,definition
+Generalization,definition
+Graph,definition
+Greedy Best-First Search,definition
+Heuristics,definition
+Instance-based Learning,definition
+Intelligence,definition
+Iterative-deepening search,definition
+Key Word,definition
+Knowledgebase,definition
+Known,definition
+LIFO queue,definition
+Machine Learning,definition
+Model-based Learning,definition
+Multiagent,definition
+Omniscience Agent,definition
+Optimality,definition
+PEAS,definition
+Partially observable,definition
+Path,definition
+"Priority queue,From queue",definition
+Problem space,definition
+Randomization,definition
+Rational Agent,definition
+Rationality,definition
+Recommendation systems,definition
+Reinforcement Learning,definition
+Search,definition
+Semantics,definition
+Semi-supervised Learning,definition
+Sequential,definition
+Single Agent,definition
+Space complexity,definition
+Spatial Information,definition
+State,definition
+State Space,definition
+State space,definition
+State space search,definition
+Static,definition
+Statistical parity,definition
+Stochastic,definition
+Strong AI,definition
+Supervised Learning,definition
+Suppression,definition
+Syntax,definition
+Time complexity,definition
+Turing Test,definition
+Uniform-cost search,definition
+Uniformed search,definition
+Unknown,definition
+Unsupervised Learning,definition
+Weak AI,definition
