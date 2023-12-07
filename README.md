@@ -15,7 +15,7 @@
 ## Requirements
 python.exe -m pip install --upgrade pip
 
-pip install scikit-learn pandas flask
+pip install scikit-learn pandas flask sympy
 
 ## How to use
 1. Open terminal or IDE
