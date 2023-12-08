@@ -99,10 +99,6 @@ def is_calculus_query(query):
     return any(keyword in query.lower() for keyword in calculus_keywords)
 
 
-def handle_calculus(query):
-    pass
-
-
 def is_algebraic_query(query):
     return re.search(r'\w+\s*[=]\s*.+', query)
 
@@ -133,8 +129,6 @@ def chat(user_input):
     if re.search(r'\b\d+\s*(\+|\-|\*|\/|add|plus|subtract|minus|multiply|times|divide|by)\s*\d+\b', user_input,
                  re.IGNORECASE):
         return handle_math(user_input)
-    if is_calculus_query(user_input):
-        return handle_calculus(user_input)
 
     # Predict the intent
     predicted_intent = model.predict([user_input])[0]
