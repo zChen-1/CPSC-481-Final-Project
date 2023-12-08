@@ -1,12 +1,10 @@
-# CPSC-481-Final-Project
+# CPSC481-Tuffy Chatbot AI Tutor
 
-## Group Information
-* Name: Zhihuang Chen 
-* Name: Justin Jhern
-* Name: Taylor Kim
-* Name: David Navarro
-
-
+## Group Members
+* Zhihuang Chen 
+* Justin Jhern
+* Taylor Kim
+* David Navarro
 
 ## Requirements
 python.exe -m pip install --upgrade pip
